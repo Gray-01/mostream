@@ -1,1 +1,2 @@
+source/Шрифты/*.zip filter=lfs diff=lfs merge=lfs -text
 source/Шрифты/Merriweather.zip filter=lfs diff=lfs merge=lfs -text
