@@ -1,0 +1,9 @@
+.hero.hero--bg-right {
+    background-image: url(/images/hero/bg.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 871px 721px;
+    background-position: right 0 top 44px;
+    min-height: calc(721px + 2 * 44px);
+    /* 809px */
+}

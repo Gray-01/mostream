@@ -1,0 +1,23 @@
+.btn--subscribe {
+    width: 124px;
+    height: 56px;
+    background-color: #F14141;
+    color: #fff;
+    border-radius: 0.375rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1em 1.5em;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn--subscribe:hover {
+    background-color: #D93939;
+}
+
+.btn--subscribe:focus {
+    outline: none;
+    background-color: #F14141;
+}

@@ -1,0 +1,110 @@
+@import url('base/reset.css');
+@import url('base/fonts.css');
+@import url('components/logo.css');
+@import url('components/header.css');
+@import url('components/header__nav.css');
+@import url('components/header__nav-link--button.css');
+@import url('components/header__search-icon.css');
+@import url('components/btn--subscribe.css');
+@import url('components/btn--signin.css');
+@import url('components/btn--primary.css');
+@import url('components/btn--secondary.css');
+@import url('components/btn-group.css');
+@import url('components/hero--bg-right.css');
+@import url('components/indicator__list.css');
+
+
+/* Базовые контейнеры */
+.site {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    border: 1px solid blue;
+}
+
+body {
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #878787;
+    background-color: #0F0F0F;
+}
+
+h2 {
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-size: 3rem;
+    /*48px*/
+    font-weight: 600;
+    color: #fff;
+}
+
+h4 {
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-size: 2rem;
+    /*32px*/
+    font-weight: 600;
+    color: #fff;
+}
+
+h5 {
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-size: 1.5rem;
+    /*24px*/
+    font-weight: 500;
+    color: #fff;
+}
+
+span.plus-jakarta {
+    font-family: 'Plus Jakarta Sans', 'Arial', sans-serif;
+    font-weight: 600;
+}
+
+.header__buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.header__nav-link {
+    font-family: 'inter', 'Arial';
+    font-size: 1em;
+    /*16px*/
+    font-weight: 600;
+}
+
+.header__nav-link:hover {
+    background-color: #242323;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 4px 8px;
+}
+
+.hero__content {
+    max-width: 605px;
+    max-height: 456px;
+    display: inline-block;
+    margin-left: 0;
+    border: 1px solid green;
+}
+
+h2.hero__title {
+    margin-bottom: 1.5rem;
+}
+
+p.hero__description {
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+/* movie-categories START */
+.movie-categories {
+    margin-top: 7.5rem;
+    /*120px*/
+    border: 1px solid gold;
+}

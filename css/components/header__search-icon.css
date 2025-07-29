@@ -1,0 +1,4 @@
+.header__search-btn:hover .header__search-icon {
+    transform: scale(1.1);
+    cursor: pointer;
+}
