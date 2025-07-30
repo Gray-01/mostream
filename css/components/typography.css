@@ -1,0 +1,13 @@
+h2.desc--h2 {
+    font-family: 'Inter', 'Sans-serif';
+    font-weight: 700;
+    font-size: 3rem;
+    /*48px*/
+    height: 112px;
+}
+
+.desc--w788 {
+    max-width: 788px;
+    margin: 0 auto;
+    text-align: center;
+}

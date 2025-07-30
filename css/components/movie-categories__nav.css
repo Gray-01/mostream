@@ -1,0 +1,33 @@
+.movie-categories__nav {
+    height: 3.625rem;
+    /* 58px */
+    margin-top: 3.5rem;
+    /*56px*/
+}
+
+
+.movie-categories__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.movie-categories__link {
+    font-size: 1.125rem;
+    /*18px*/
+    font-family: 'Inter', 'Sans-serif';
+    font-weight: 500;
+    color: #878787;
+    transition: all 0.3s ease;
+}
+
+.movie-categories__link:hover {
+    color: #fff;
+    font-weight: 700;
+    border: 0.125rem solid #606060;
+    /* 2px */
+    border-radius: 0.375rem;
+    /* 6px */
+    background-color: #242323;
+    padding: 1rem 1.5rem;
+    /* 16px 24px */
+}

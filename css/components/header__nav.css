@@ -4,3 +4,9 @@
     gap: 2rem;
     /*32px*/
 }
+
+.header__nav-link {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Inter', 'Sans-serif';
+}
