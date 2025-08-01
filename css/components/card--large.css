@@ -1,0 +1,9 @@
+.card__image--large {
+    width: 37rem;
+    /*592px*/
+    height: 30.3125rem;
+    /*485px*/
+    margin-bottom: 2rem;
+    /* 32px */
+    border: 2px solid lime;
+}

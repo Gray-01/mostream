@@ -14,6 +14,8 @@
 @import url('components/indicator__list.css');
 @import url('components/typography.css');
 @import url('components/movie-categories__nav.css');
+@import url('components/cards.css');
+@import url('components/card--large.css');
 
 
 /* Базовые контейнеры */
@@ -108,5 +110,25 @@ p.hero__description {
 .movie-categories {
     margin-top: 7.5rem;
     /*120px*/
-    border: 1px solid gold;
+}
+
+.movie__list {
+    /* border: 1px solid red; */
+}
+
+.movies__row--large {
+    display: flex;
+    gap: 3.5rem;
+    /* 56px */
+    margin-bottom: 3.5rem;
+    /* 56px */
+}
+
+article.card--large {
+    border: 1px solid purple;
+}
+
+.card--large .btn-group {
+    display: flex;
+    justify-content: center;
 }
