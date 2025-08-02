@@ -5,5 +5,9 @@
     /*485px*/
     margin-bottom: 2rem;
     /* 32px */
-    border: 2px solid lime;
+}
+
+.card--large .btn-group {
+    display: flex;
+    justify-content: center;
 }

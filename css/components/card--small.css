@@ -1,0 +1,22 @@
+.card--small {
+    max-width: 376px;
+    max-height: 721px;
+}
+
+img.card__image--small {
+    max-height: 485px;
+    max-width: 376px;
+    margin-bottom: 2rem;
+    /* 32px */
+}
+
+article.card--small p.card__desc-small {
+    margin-bottom: 2rem;
+    /* 32px */
+    text-align: center;
+}
+
+.card--small .btn-group {
+    display: flex;
+    justify-content: center;
+}

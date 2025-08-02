@@ -16,6 +16,7 @@
 @import url('components/movie-categories__nav.css');
 @import url('components/cards.css');
 @import url('components/card--large.css');
+@import url('components/card--small.css');
 
 
 /* Базовые контейнеры */
@@ -30,7 +31,6 @@
     width: 100%;
     margin: 0 auto;
     padding: 0 10px;
-    border: 1px solid blue;
 }
 
 body {
@@ -94,7 +94,6 @@ span.plus-jakarta {
     max-height: 456px;
     display: inline-block;
     margin-left: 0;
-    border: 1px solid green;
 }
 
 h2.hero__title {
@@ -112,10 +111,6 @@ p.hero__description {
     /*120px*/
 }
 
-.movie__list {
-    /* border: 1px solid red; */
-}
-
 .movies__row--large {
     display: flex;
     gap: 3.5rem;
@@ -124,11 +119,13 @@ p.hero__description {
     /* 56px */
 }
 
-article.card--large {
-    border: 1px solid purple;
+.movies__row--small {
+    display: flex;
+    gap: 2.5rem;
+    /* 56px */
 }
 
-.card--large .btn-group {
-    display: flex;
-    justify-content: center;
+article.card--small {
+    margin-bottom: 7.5rem;
+    /* 120px */
 }
