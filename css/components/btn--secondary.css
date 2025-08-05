@@ -15,11 +15,11 @@
     transition: background-color 0.3s ease;
 }
 
-.btn--signin:hover {
+.btn--secondary:hover {
     background-color: #D93939;
 }
 
-.btn--signin:focus {
+.btn--secondary:focus {
     outline: none;
     background-color: #F14141;
 }

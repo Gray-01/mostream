@@ -17,6 +17,9 @@
 @import url('components/cards.css');
 @import url('components/card--large.css');
 @import url('components/card--small.css');
+@import url('components/btn--red.css');
+@import url('components/btn--black.css');
+
 
 
 /* Базовые контейнеры */
@@ -31,6 +34,7 @@
     width: 100%;
     margin: 0 auto;
     padding: 0 10px;
+    border: 1px solid blue;
 }
 
 body {
@@ -128,4 +132,63 @@ p.hero__description {
 article.card--small {
     margin-bottom: 7.5rem;
     /* 120px */
+}
+
+section.movie-content {
+    margin-top: 8.125rem;
+    /* 130px */
+}
+
+.movie__wrapper {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    max-height: 132px;
+}
+
+.movie-content--inner {
+    max-width: 37rem;
+    /* 592px */
+    max-height: 3.25rem;
+    /* 52px */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.movie__news--primary {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 3.5rem;
+    /* 56px */
+    gap: 56px;
+}
+
+.movie__news-image {
+    width: 37rem;
+    /* 592px */
+    height: 20.0625rem;
+    /* 417px */
+}
+
+.movie__news-content {
+    width: 37rem;
+    /* 592px */
+    max-height: 17rem;
+    /* 272px */
+    margin-top: 4.5rem;
+    /* 72px */
+    display: flex;
+    flex-direction: column;
+}
+
+.movie__news--primary .btn--black {
+    margin-top: 2rem;
+    /* 32px */
+}
+
+.movie__news--secondary {
+    margin-top: 5rem;
+    /* 80px */
 }
