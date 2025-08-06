@@ -107,6 +107,7 @@ h2.hero__title {
 p.hero__description {
     font-weight: 500;
     margin-bottom: 2rem;
+    line-height: 1.4;
 }
 
 /* movie-categories START */
@@ -191,4 +192,54 @@ section.movie-content {
 .movie__news--secondary {
     margin-top: 5rem;
     /* 80px */
+    display: flex;
+    gap: 2.7rem;
+    /* 56px */
+}
+
+.movie__news-item {
+    width: 23.5rem;
+    /* 376px */
+    height: 28.5rem;
+    /* 456px */
+}
+
+.movie__news-image {
+    max-width: 23.5rem;
+    /* 376px */
+    max-height: 22.375rem;
+    /* 358px */
+    margin-bottom: 2rem;
+}
+
+/* faq START */
+
+.faq__wrapper {
+    display: flex;
+    gap: 3.5rem;
+    /* 56px */
+    margin-bottom: 120px;
+}
+
+.faq__question {
+    max-width: 31.125rem;
+    /* 498px */
+    max-height: 28.875rem;
+    /* 462px */
+}
+
+.faq__question h2.desc--h2 {
+    margin-bottom: 24px;
+}
+
+.faq__question p.desc {
+    margin-bottom: 32px;
+}
+
+.faq__contact h5.desc--h5 {
+    margin-bottom: 1rem;
+}
+
+.faq__contact p.desc {
+    margin-bottom: 44px;
 }
