@@ -19,6 +19,8 @@
 @import url('components/card--small.css');
 @import url('components/btn--red.css');
 @import url('components/btn--black.css');
+@import url('components/faq.css');
+@import url('components/cta.css');
 
 
 
@@ -210,36 +212,4 @@ section.movie-content {
     max-height: 22.375rem;
     /* 358px */
     margin-bottom: 2rem;
-}
-
-/* faq START */
-
-.faq__wrapper {
-    display: flex;
-    gap: 3.5rem;
-    /* 56px */
-    margin-bottom: 120px;
-}
-
-.faq__question {
-    max-width: 31.125rem;
-    /* 498px */
-    max-height: 28.875rem;
-    /* 462px */
-}
-
-.faq__question h2.desc--h2 {
-    margin-bottom: 24px;
-}
-
-.faq__question p.desc {
-    margin-bottom: 32px;
-}
-
-.faq__contact h5.desc--h5 {
-    margin-bottom: 1rem;
-}
-
-.faq__contact p.desc {
-    margin-bottom: 44px;
 }

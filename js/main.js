@@ -13,3 +13,28 @@ function switchIndicator() {
 }
 
 setInterval(switchIndicator, 5000);
+
+document.addEventListener('DOMContentLoaded', () => {
+    const accordions = document.querySelectorAll('[data-accordion]');
+
+    accordions.forEach(item => {
+        const header = item.querySelector('.faq__accordion-header');
+        const toggle = item.querySelector('.faq__accordion-toggle');
+        const content = item.querySelector('.faq__accordion-content');
+        const icon = toggle.querySelector('.faq__accordion-header-icon');
+
+        header.addEventListener('click', () => {
+            const expanded = toggle.getAttribute('aria-expanded') === 'true';
+
+            toggle.setAttribute('aria-expanded', !expanded);
+            content.setAttribute('aria-expanded', !expanded);
+            icon.src = expanded ? 'images/icons/circle-plus.svg' : 'images/icons/circle-minus.svg';
+
+            if (!expanded) {
+                content.removeAttribute('hidden');
+            } else {
+                content.setAttribute('hidden', '');
+            }
+        });
+    });
+});
