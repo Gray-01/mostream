@@ -19,6 +19,7 @@
 @import url('components/card--small.css');
 @import url('components/btn--red.css');
 @import url('components/btn--black.css');
+@import url('components/btn--contact.css');
 @import url('components/faq.css');
 @import url('components/cta.css');
 
@@ -212,4 +213,80 @@ section.movie-content {
     max-height: 22.375rem;
     /* 358px */
     margin-bottom: 2rem;
+}
+
+.faq__question--contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/images/faq/faq-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0.75rem;
+    /* 12px */
+}
+
+.faq__question--contact p {
+    text-align: left;
+    margin-top: 1.4375rem;
+    /* 48px */
+}
+
+/* movie-cta START */
+
+.movie-cta {
+    max-width: 1240px;
+    margin: 0 auto;
+    background-image: url(/images/cta/cta-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.movie-categories__content {
+    height: 528px;
+    max-width: 964px;
+    /* margin: 120px 238px 32px; */
+}
+
+.movie-cta h2 {
+    margin: 7.5rem 12.5rem 1.5rem;
+    /* 120px 238px 24px */
+}
+
+.movie-cta p {
+    font-size: 1.5rem;
+    /* 24px */
+    margin: 0 12.5rem;
+}
+
+.cta__input {
+    width: 320px;
+    height: 56px;
+    border: 1px solid #383838;
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    color: #878787;
+    background-color: #0F0F0F;
+    outline: none;
+}
+
+.cta__input::placeholder {
+    color: #878787;
+}
+
+.cta__subscribe {
+    margin-top: 32px;
+    margin-bottom: 120px;
+}
+
+.cta__subscribe {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: 31.25rem;
+    /* 500px */
+    margin: 2rem auto 7.5rem;
 }

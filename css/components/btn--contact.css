@@ -1,6 +1,6 @@
-.btn--subscribe {
-    width: 7.75rem;
-    /* 124px */
+.btn--contact {
+    width: 7.625rem;
+    /* 122px */
     height: 3.5rem;
     /* 56px */
     background-color: #F14141;
@@ -9,17 +9,17 @@
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     font-weight: 600;
-    padding: 1em 1.5em;
+    padding: 1em 1.1em;
     cursor: pointer;
     border: none;
     transition: background-color 0.3s ease;
 }
 
-.btn--subscribe:hover {
+.btn--contact:hover {
     background-color: #D93939;
 }
 
-.btn--subscribe:focus {
+.btn--contact:focus {
     outline: none;
     background-color: #F14141;
 }
