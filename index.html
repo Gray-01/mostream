@@ -10,13 +10,17 @@
 
 <body>
   <div class="site">
-    <section class="hero hero--bg-right">
 
+    <section class="hero hero--bg-right">
       <div class="container">
         <header class="header">
           <a class="logo header__logo" href="/">MOSTREAM</a>
 
-          <nav class="header__nav">
+          <button class="burger-toggle" aria-expanded="false" aria-controls="header-nav">
+            <span class="burger-icon">☰</span>
+          </button>
+
+          <nav class="header__nav" id="header-nav">
             <ul class="header__nav-list">
               <li class="header__nav-item"><a class="header__nav-link" href="#">HOME</a></li>
               <li class="header__nav-item"><a class="header__nav-link" href="#">LIVE</a></li>
@@ -76,11 +80,9 @@
           </div>
         </div>
       </div>
-
-
-
+      <!--
       <main class="main">
-        <!-- movie-categories START -->
+
         <section class="movie-categories">
           <div class="container">
             <div class="movie-categories__content">
@@ -206,7 +208,7 @@
           </div>
 
         </section>
-        <!-- movie--content START -->
+
         <section class="movie movie--content">
           <div class="container">
             <div class="movie__wrapper">
@@ -260,7 +262,7 @@
           </div>
         </section>
 
-        <!-- faq START -->
+
         <section class="faq">
           <div class="container">
             <div class="faq__wrapper">
@@ -360,7 +362,7 @@
           </div>
         </section>
 
-        <!-- cta START -->
+
         <section class="movie movie-cta">
           <div class="container">
             <movie-cta__content>
@@ -435,6 +437,9 @@
           </div>
         </div>
       </footer>
+
+ -->
+
   </div>
   <script src="js/main.js"></script>
 </body>

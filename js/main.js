@@ -38,3 +38,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const burger = document.querySelector('.burger-toggle');
+  const nav = document.querySelector('#header-nav'); // используем id — точнее
+
+  if (!burger || !nav) return; // защита
+
+  burger.addEventListener('click', () => {
+    const isExpanded = burger.getAttribute('aria-expanded') === 'true';
+    const newState = !isExpanded;
+
+    // всегда ставим строковое значение "true"/"false"
+    burger.setAttribute('aria-expanded', String(newState));
+    nav.setAttribute('aria-expanded', String(newState));
+
+    // меняем значок
+    burger.textContent = newState ? '✕' : '☰';
+  });
+});
