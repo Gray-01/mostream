@@ -1,0 +1,191 @@
+/* ===============================
+   1280px
+================================ */
+@media (max-width: 1280px) {
+    .hero {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .hero__content {
+        padding-left: 2rem;
+    }
+
+    .header {
+        padding: 0 2rem;
+    }
+}
+
+/* ===============================
+   1180px
+================================ */
+@media (max-width: 1180px) {
+    .header {
+        position: relative;
+    }
+
+    /* Навигация скрыта по умолчанию */
+    .header__nav {
+        display: none;
+    }
+
+    /* Бургер-кнопка */
+    .burger-toggle {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: #fff;
+        margin-right: 1rem;
+    }
+
+    /* Навигация при открытии */
+    .header__nav[aria-expanded="true"] {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: #0F0F0F;
+        color: #878787;
+        padding: 1rem;
+    }
+
+    /* Кнопки справа */
+    .header__buttons {
+        display: none;
+        margin-left: auto;
+    }
+}
+
+/* ===============================
+   1040px
+================================ */
+@media (max-width: 1040px) {
+    .header .header__nav {
+        margin-bottom: 2rem;
+    }
+}
+
+/* ===============================
+   768px
+================================ */
+@media (max-width: 768px) {
+    .hero {
+        padding: 0.625em;
+    }
+
+    .header {
+        margin-bottom: 4rem;
+    }
+
+    .hero__content .hero__description {
+        margin-bottom: 6rem;
+    }
+}
+
+/* ===============================
+   678px
+================================ */
+@media (max-width: 678px) {
+    .header .header__buttons {
+        display: none;
+    }
+}
+
+/* ===============================
+   578px
+================================ */
+@media (max-width: 578px) {
+
+    /* Текст в hero меньше */
+    .hero__title {
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+
+    .hero__description {
+        font-size: 0.875rem;
+        line-height: 1.4;
+    }
+
+    /* Кнопки в hero в колонку */
+    .btn-group {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    /* Индикаторы меньше */
+    .indicator__item {
+        width: 6px;
+        height: 6px;
+    }
+
+    /* Лого меньше */
+    .header__logo {
+        font-size: 1.2rem;
+    }
+
+    /* Внутренние отступы */
+    .hero {
+        padding: 1rem;
+    }
+}
+
+/* ===============================
+   554px
+================================ */
+
+@media (max-width: 554px) {
+    .header .header__nav {
+        padding: 0.5rem;
+    }
+
+    .header .header__nav-link {
+        font-size: 0.875rem;
+    }
+
+    h2.hero__title {
+        margin: 4.5rem 0;
+    }
+
+    .indicator__list {
+        margin-top: 8rem;
+    }
+}
+
+/* ===============================
+   375px
+================================ */
+
+@media (max-width: 375px) {
+    .hero__content {
+        max-width: 20.4375rem;
+        /* ширина кнопок */
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .btn--primary,
+    .btn--secondary {
+        width: 100%;
+        height: 3.25rem;
+    }
+
+    h2.hero__title {
+        margin: 1.5rem 0;
+    }
+}
