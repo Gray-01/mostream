@@ -82,7 +82,7 @@
           </div>
         </div>
       </div>
-      <!--
+
       <main class="main">
 
         <section class="movie-categories">
@@ -91,7 +91,12 @@
               <h2 class="desc--h2 desc--w788">
                 Explore Our Wide Range of Movie Categories and Genres
               </h2>
-              <nav class="movie-categories__nav">
+
+              <button class="movie-categories__burger" aria-expanded="false" aria-controls="movie-categories-nav">
+                ☰
+              </button>
+
+              <nav class="movie-categories__nav" id="movie-categories-nav" aria-expanded="false">
                 <ul class="movie-categories__list">
                   <li class="movie-categories__item">
                     <a class="movie-categories__link" href="#">All</a>
@@ -119,6 +124,9 @@
                   </li>
                 </ul>
               </nav>
+
+
+
             </div>
             <div class="movie__list">
               <div class="movies__row movies__row--large">
@@ -210,7 +218,7 @@
           </div>
 
         </section>
-
+        <!--
         <section class="movie movie--content">
           <div class="container">
             <div class="movie__wrapper">

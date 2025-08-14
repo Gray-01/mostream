@@ -58,4 +58,29 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// бургер2
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const burger = document.querySelector('.movie-categories__burger');
+  const nav = document.querySelector('#movie-categories-nav');
+
+  if (!burger || !nav) return; // защита
+
+  burger.addEventListener('click', () => {
+    const isExpanded = burger.getAttribute('aria-expanded') === 'true';
+    const newState = !isExpanded;
+
+    burger.setAttribute('aria-expanded', String(newState));
+    nav.setAttribute('aria-expanded', String(newState));
+
+    burger.textContent = newState ? '✕' : '☰';
+
+    // Явно переключаем отображение навигации
+    nav.style.display = newState ? 'block' : 'none';
+  });
+});
+
+
+
 

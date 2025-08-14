@@ -17,6 +17,41 @@
 }
 
 /* ===============================
+   1280px
+================================ */
+
+@media (max-width: 1280px) {
+    .movie__list .movies__row--small {
+        gap: 1.5rem;
+    }
+}
+
+/* ===============================
+   1240px
+================================ */
+
+@media (max-width: 1240px) {
+    .movie__list .movies__row--small {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 7rem;
+    }
+}
+
+/* ===============================
+   1200px
+================================ */
+
+@media (max-width: 1200px) {
+    .movie__list .movies__row--large {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* ===============================
    1180px
 ================================ */
 @media (max-width: 1180px) {
@@ -62,13 +97,76 @@
 }
 
 /* ===============================
-   1040px
+   1100px
 ================================ */
-@media (max-width: 1040px) {
-    .header .header__nav {
-        margin-bottom: 2rem;
+
+@media (max-width: 1100px) {
+    .movie-categories__content h2.desc--h2 {
+        font-size: 2.8rem;
+    }
+
+    .movie__list .movies__row--small {
+        gap: 3rem;
     }
 }
+
+/* ===============================
+   1080px
+================================ */
+
+/* десктоп: меню видно, бургера нет */
+@media (min-width: 1081px) {
+    .movie-categories__burger {
+        display: none;
+    }
+
+    .movie-categories__nav {
+        display: block;
+    }
+}
+
+/* мобилка/планшет: меню прячем, показываем по aria-expanded */
+@media (max-width: 1080px) {
+    .movie-categories__burger {
+        display: inline-block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        color: #fff;
+        margin-left: -2rem;
+    }
+
+    .movie-categories__nav {
+        display: none;
+        margin-top: 1rem;
+    }
+
+    .movie-categories__nav[aria-expanded="true"] {
+        display: block;
+    }
+
+    .movie-categories__content .desc--h2 {
+        display: none;
+    }
+
+    .movie-categories__content {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        /* выравнивание по левому краю */
+        gap: 1rem;
+        /* если нужен отступ между элементами */
+    }
+
+    .movie-categories__burger {
+        order: -1;
+        /* если нужно вывести её в самое начало */
+        margin-right: auto;
+        /* прижать к левому краю */
+    }
+}
+
 
 /* ===============================
    768px
@@ -86,6 +184,29 @@
         margin-bottom: 6rem;
     }
 }
+
+@media (max-width: 768px) {
+    .movie-categories__nav {
+        display: flex;
+        flex-direction: column;
+        /* в столбик */
+        gap: 1rem;
+        /* расстояние между кнопками */
+        padding: 1rem;
+        /* внутренний отступ от краёв */
+    }
+
+    .movie-categories__nav a {
+        display: block;
+        padding: 0.5rem 0.5rem;
+        /* отступы внутри кнопки */
+    }
+
+    .movie-categories__burger {
+        margin-left: -11rem;
+    }
+}
+
 
 /* ===============================
    678px
@@ -157,9 +278,7 @@
     }
 }
 
-/* ===============================
-   375px
-================================ */
+/*375px*/
 
 @media (max-width: 375px) {
     .hero__content {
@@ -187,5 +306,34 @@
 
     h2.hero__title {
         margin: 1.5rem 0;
+    }
+}
+
+/*375px movie-categories*/
+
+@media (max-width: 375px) {
+
+    .movie-categories__burger,
+    .movie-categories__nav {
+        display: none;
+    }
+
+    .movie-categories {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .movie-categories {
+        margin-top: 0;
+        /* на всякий случай */
+    }
+
+    .movie-categories__wrapper {
+        /* родитель flex/grid */
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        /* гарантированный отступ */
     }
 }

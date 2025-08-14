@@ -26,6 +26,12 @@
 
 
 
+html,
+body {
+    overflow-x: hidden;
+}
+
+
 /* Базовые контейнеры */
 .site {
     max-width: 1440px;
@@ -115,7 +121,7 @@ p.hero__description {
 
 /* movie-categories START */
 .movie-categories {
-    margin-top: 7.5rem;
+    margin-top: 13rem;
     /*120px*/
 }
 

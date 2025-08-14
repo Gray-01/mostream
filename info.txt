@@ -2,7 +2,10 @@ https://www.figma.com/design/Z6ntISLxXPXjC7GbYb28D9/Film-Streaming-Website?node-
 
 брейкпоинты
 1280
+1240
 1180
 768
 678
 554
+
+продолжить с экрана 1080
