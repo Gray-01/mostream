@@ -83,6 +83,18 @@ span.plus-jakarta {
     font-weight: 600;
 }
 
+.hero__mobile-bg {
+    display: none;
+    /* Скрываем по умолчанию на всех экранах */
+}
+
+@media screen and (max-width: 375px) {
+    .hero__mobile-bg {
+        display: block;
+        /* Показываем только на экранах 375px и меньше */
+    }
+}
+
 .header__buttons {
     display: flex;
     gap: 16px;
@@ -121,7 +133,7 @@ p.hero__description {
 
 /* movie-categories START */
 .movie-categories {
-    margin-top: 13rem;
+    margin-top: 0rem;
     /*120px*/
 }
 
@@ -255,10 +267,11 @@ section.movie-content {
 }
 
 .movie-categories__content {
-    max-height: 14.125rem;
+    /*max-height: 14.125rem;*/
+    max-height: 1.rem;
     /* 226px */
     max-width: 964px;
-    margin: 120px 238px 32px;
+    margin: 0px 238px 32px;
 }
 
 .movie-cta h2 {
