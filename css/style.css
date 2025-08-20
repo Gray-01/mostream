@@ -164,8 +164,13 @@ section.movie-content {
 .movie__wrapper {
     display: flex;
     text-align: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     max-height: 132px;
+    margin-left: -16px;
+}
+
+.movie__wrapper h2.movie-content {
+    margin-right: -120px;
 }
 
 .movie-content--inner {

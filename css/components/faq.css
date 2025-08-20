@@ -1,3 +1,9 @@
+.faq {
+    margin-top: 12rem;
+    display: flow-root;
+}
+
+
 .faq__wrapper {
     display: flex;
     flex-direction: row;
